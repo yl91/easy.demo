@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    var list = @ViewBag.data;
+}
+
+<h2>Index</h2>
+
+@foreach (var item in list)
+{
+    <h3>餐厅名称：@item.Name 地址：@item.Address</h3>
+}
+
+

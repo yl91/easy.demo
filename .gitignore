@@ -1,0 +1,13 @@
+00Easy.Demo/bin/
+00Easy.Demo/obj/
+02Easy.Application/bin/
+02Easy.Application/obj/
+03Easy.Domain.Model/bin/
+03Easy.Domain.Model/obj/Debug
+04Easy.Infrastructure/bin/
+04Easy.Infrastructure/obj/
+05Easy.Test/bin/
+05Easy.Test/obj/
+Test/bin/
+Test/obj/Debug/
+Easy.Services/obj/Debug/
