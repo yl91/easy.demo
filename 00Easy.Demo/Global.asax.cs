@@ -19,6 +19,8 @@ namespace _00Easy.Demo
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
+            DirectoryFactory.Register("EasyDemo", new StaticDirectory(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "servicedemo.config"), "EasyDemo"));
+
             string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "EasyDemo.config");
             Easy.Rpc.directory.DirectoryFactory.Register("EasyDemo", new StaticDirectory(path, "EasyDemo"));
         }
