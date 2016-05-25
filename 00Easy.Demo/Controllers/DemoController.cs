@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Easy.Application;
+using Easy.Application.Models;
 using Easy.Domain.Application;
 
 namespace _00Easy.Demo.Controllers
@@ -14,9 +15,9 @@ namespace _00Easy.Demo.Controllers
         public ActionResult Index()
         {
             IReturn @IReturn = ApplicationRegistry.Demo.SayHello("zhangsan", 20);
-            var result = @IReturn.Result(new ReturnContext() { SystemId = "app" });
+            ResultWithData<string> result = @IReturn.Result(new ReturnContext() { SystemId = "app" });
 
-            ViewBag.data = result;
+            ViewBag.data = result.DataBody;
             return View();
         }
 
