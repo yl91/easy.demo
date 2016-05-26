@@ -34,7 +34,7 @@ namespace _00Easy.Demo.Controllers
 
             ApplicationRegistry.Supplier.Add(model);
 
-            ViewBag.Name = "哈哈哈，天气不错哟~";
+            ViewBag.Name = name;
             return View();
         }
 
