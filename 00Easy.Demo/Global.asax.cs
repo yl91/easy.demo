@@ -52,8 +52,8 @@ namespace _00Easy.Demo
             //}
 
 
-            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "EasyDemo.config");
-            Easy.Rpc.directory.DirectoryFactory.Register("EasyDemo", new StaticDirectory(path, "EasyDemo"));
+            //string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "EasyDemo.config");
+            //Easy.Rpc.directory.DirectoryFactory.Register("EasyDemo", new StaticDirectory(path, "EasyDemo"));
         }
     }
 }
