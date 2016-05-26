@@ -14,6 +14,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05Easy.Test", "05Easy.Test\05Easy.Test.csproj", "{78E4003F-8ABB-4835-98D3-75F0D20FB873}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00Easy.Demo", "00Easy.Demo\00Easy.Demo.csproj", "{3A568542-CD50-4348-9E62-6B173B157476}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9024FA4F-1850-4D76-8F86-95FB60AF1045} = {9024FA4F-1850-4D76-8F86-95FB60AF1045}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easy.Services", "Easy.Services\Easy.Services.csproj", "{FDB27ED2-B002-48F2-8C1C-AC1D805ACCE8}"
 EndProject

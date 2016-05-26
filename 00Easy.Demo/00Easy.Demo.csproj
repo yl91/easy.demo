@@ -224,11 +224,10 @@
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup>
-    <PostBuildEvent>xcopy $(ProjectDir)..\Easy.Infrastructure\bin\Easy.Infrastructure.dll $(TargetDir) /i/y
-xcopy $(ProjectDir)..\Easy.Infrastructure\bin\Dapper.dll $(TargetDir) /i/y
-xcopy $(ProjectDir)..\Easy.Infrastructure\bin\MySql.Data.dll $(TargetDir) /i/y
-xcopy $(ProjectDir)..\Easy.Infrastructure\bin\Castle.Core.dll $(TargetDir) /i/y
-xcopy $(ProjectDir)..\Easy.Application\Easy.Application.XML $(ProjectDir) /i/y
+    <PostBuildEvent>xcopy $(ProjectDir)..\04Easy.Infrastructure\bin\Easy.Infrastructure.dll $(TargetDir) /i/y
+xcopy $(ProjectDir)..\04Easy.Infrastructure\bin\Dapper.dll $(TargetDir) /i/y
+xcopy $(ProjectDir)..\04Easy.Infrastructure\bin\MySql.Data.dll $(TargetDir) /i/y
+xcopy $(ProjectDir)..\04Easy.Infrastructure\bin\Castle.Core.dll $(TargetDir) /i/y
 xcopy $(ProjectDir)..\ConfigFiles\public\*.* $(ProjectDir) /i/y</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
