@@ -15,7 +15,7 @@ namespace Easy.Application.Application
         public IReturn SayHello(string name, int age)
         {
           
-            var result = ServicesRegistry.Demo.SayHello("zs",20);
+            var result = ServicesRegistry.Demo.SayHello(name,age);
 
             return this.Write("SayHello", result.DataBody);
         }
