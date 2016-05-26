@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.39541240.com/services">
-  <service interface="Easy.Services.IDemoService,Easy.Services"
-           implementation="Easy.Services.DemoService,Easy.Services"
-           interceptor="Easy.Rpc.RPCServiceInterceptor,Easy.Rpc"
-           enable_interceptor="true"
-           />
-</services>
