@@ -16,7 +16,7 @@ namespace Easy.Services
     public class DemoService : IDemoService, IService
     {
         [ServiceProtocol]
-        [Directory("EasyDemo", "Demo/SayHello")]
+        [Directory("ServiceDemo", "Demo/SayHello")]
         [Cluster(FailoverCluster.NAME)]
         [LoadBalance(RandomLoadBalance.NAME)]
         public virtual ResultWithData<string> SayHello(string name, int age, InvokerContext context = null)
