@@ -24,7 +24,7 @@ namespace _00Easy.Demo.Controllers
             return View();
         }
 
-        public ActionResult Test(string name)
+        public ActionResult Test(string name="demo")
         {
             var model = new AddSupplierModel()
             {

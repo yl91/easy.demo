@@ -12,7 +12,7 @@ namespace _00Easy.Demo.Controllers
     public class DemoController : Controller
     {
         // GET: Demo
-        public ActionResult Index(string name,int age)
+        public ActionResult Index(string name="demo",int age=18)
         {
             IReturn @IReturn = ApplicationRegistry.Demo.SayHello(name, age);
             ResultWithData<string> result = @IReturn.Result(new ReturnContext() { SystemId = "app" });
