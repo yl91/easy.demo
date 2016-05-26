@@ -12,9 +12,9 @@ namespace _00Easy.Demo.Controllers
     public class DemoController : Controller
     {
         // GET: Demo
-        public ActionResult Index()
+        public ActionResult Index(string name,int age)
         {
-            IReturn @IReturn = ApplicationRegistry.Demo.SayHello("zhangsan", 20);
+            IReturn @IReturn = ApplicationRegistry.Demo.SayHello(name, age);
             ResultWithData<string> result = @IReturn.Result(new ReturnContext() { SystemId = "app" });
 
             ViewBag.data = result.DataBody;

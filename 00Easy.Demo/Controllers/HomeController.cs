@@ -24,12 +24,12 @@ namespace _00Easy.Demo.Controllers
             return View();
         }
 
-        public ActionResult Test()
+        public ActionResult Test(string name)
         {
             var model = new AddSupplierModel()
             {
-                Address = "北京市朝阳区111",BusinessTimeStart = new TimeModel(){Hour = 8,Minute = 0},BusinessTimeEnd = new TimeModel(){Hour = 20,Minute = 0},CoordinatesLatitude = "42.324",CoordinatesLongitude = "152.324",DeliveryTime = new DeliveryTime[]{new DeliveryTime(){Start = new TimeModel(){Hour = 11,Minute = 0},End = new TimeModel(){Hour = 13,Minute = 30}} },
-                Name = "测试",Tel = "13888888888"
+                Address = "北京市朝阳区华腾世纪总部公园",BusinessTimeStart = new TimeModel(){Hour = 8,Minute = 0},BusinessTimeEnd = new TimeModel(){Hour = 20,Minute = 0},CoordinatesLatitude = "42.324",CoordinatesLongitude = "152.324",DeliveryTime = new DeliveryTime[]{new DeliveryTime(){Start = new TimeModel(){Hour = 11,Minute = 0},End = new TimeModel(){Hour = 13,Minute = 30}} },
+                Name =name,Tel = "13888888888"
             };
 
             ApplicationRegistry.Supplier.Add(model);
