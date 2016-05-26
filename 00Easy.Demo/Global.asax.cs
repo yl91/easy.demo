@@ -32,7 +32,7 @@ namespace _00Easy.Demo
                 string registerUrl = ConfigurationManager.AppSettings["registerUrl"];
                 string redisUrl = ConfigurationManager.AppSettings["redisUrl"];
                 int databaseIndex = int.Parse(ConfigurationManager.AppSettings["databaseIndex"]);
-                var builder = new RedisDirectoryBuilder(registerUrl, redisUrl, databaseIndex);
+                var builder = new RedisDirectoryBuilder(registerUrl, redisUrl);
                 builder.Build(new MySelfInfo()
                 {
                     Description = "Demo站点",

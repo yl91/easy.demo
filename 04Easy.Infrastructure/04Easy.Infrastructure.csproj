@@ -47,6 +47,10 @@
       <HintPath>..\packages\Easy.Public.1.0.2.4\lib\net451\Easy.Public.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Easy.Rpc, Version=1.0.1.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Easy.Rpc.1.0.1.4\lib\net451\Easy.Rpc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.6.9.8\lib\net45\MySql.Data.dll</HintPath>
       <Private>True</Private>
