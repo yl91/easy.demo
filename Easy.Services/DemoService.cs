@@ -5,9 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Easy.Domain.ServiceFramework;
 using Easy.Public.HttpRequestService;
+using Easy.Public.MyLog;
 using Easy.Rpc;
 using Easy.Rpc.Cluster;
 using Easy.Rpc.LoadBalance;
+using Newtonsoft.Json;
 
 namespace Easy.Services
 {
@@ -23,6 +25,8 @@ namespace Easy.Services
 
             var foodInvoker = new DemoInvoker<ResultWithData<string>>((invoker, node, path) =>
             {
+                LogManager.Info("==test==",JsonConvert.SerializeObject(node));
+
                 string url = invoker.JoinURL(node, path)+"?name="+name+"&age="+age;
                 var request = HttpRequestClient.Request(url, "GET", false);
                 request.Headers.Add("SystemId", actualContext.SystemId);
