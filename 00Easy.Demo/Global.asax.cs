@@ -43,8 +43,8 @@ namespace _00Easy.Demo
                     Ip = string.Format("{0}:{1}",IpHelper.InternetIp4(),80)
                 }, new string[1] { "ServiceDemo" }, new string[0]);
 
-                //string monitorUrl = ConfigurationManager.AppSettings["monitorUrl"];
-                //MonitorManager.RegisterSend(new HttpSendCollectorData(monitorUrl));
+                string monitorUrl = ConfigurationManager.AppSettings["monitorUrl"];
+                MonitorManager.RegisterSend(new HttpSendCollectorData(monitorUrl));
             }
             //if (ConfigurationManager.AppSettings["remoteLog"] == "true")
             //{
